@@ -9,6 +9,8 @@
 >>	2.	### ./make
 >>	3.	### cp pdf2img /usr/bin
 >
+> To clean compiled modules use the comand
+>>  1. ### ./make clean
 >
 > ## Use ImageMagick
 >
