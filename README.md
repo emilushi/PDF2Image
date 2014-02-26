@@ -4,7 +4,7 @@
 >
 > We provide a program to convert pdf in to image.
 > After checkout the code u must install gviewer with these commands
-> Note: If your are using shared server you will need to have premission to install the gviewer
+>> Note: If your are using shared server you will need to have premission to install the gviewer
 >
 >>	1.	### ./configure
 >>	2.	### ./make
