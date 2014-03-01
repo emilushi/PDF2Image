@@ -7,7 +7,7 @@ use Imagick;
 /**
  * This class convert PDF in to Image
  * 
- * @author Albion Liçi <lici.albion@gmail.com>
+ * @author SHOM TEK <shqip@shqiperiamarketing.com>
  */
 class PdfToImage {
 
@@ -23,7 +23,7 @@ class PdfToImage {
         if (!file_exists($image_path)) {
             mkdir($image_path, 0777, true);
         }
-        echo exec('pdf2image ' . $parameters . ' "' . $full_filename_pdf . '" "' . $full_filename_image . '" 2>&1');
+        exec('pdf2image ' . $parameters . ' "' . $full_filename_pdf . '" "' . $full_filename_image . '" 2>&1');
         unlink($full_filename_image);
         $files_image = scandir($image_path);
         $image_array = array();

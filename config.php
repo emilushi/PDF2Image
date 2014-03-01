@@ -16,4 +16,4 @@ define("MEDIAPATH", BASEPATH . "media/");
   |-----------------------------------------------------------------------------
   | "gviewer" || "convert" || "imagick"
  */
-define("USELIB", "gviewer");
+define("USELIB", "convert");
