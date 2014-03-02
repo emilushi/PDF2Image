@@ -1,9 +1,10 @@
-# We support these three case for convert PDF in to Image
+#This aplication is about converting pdf doc to image throught the web.
+> We support these three case to convert PDF doc to Image
 >
 > ## Use gviewer
 >
-> We provide a program to convert pdf in to image.
 > After checkout the code u must install gviewer with these commands
+> To install gviewer use these commands:
 >
 >>	1.	### ./configure
 >>	2.	### ./make
@@ -12,7 +13,7 @@
 >
 > ## Use ImageMagick
 >
-> Maybe you need to run these commands to install ImageMagick (example: Distro [Debian/Ubuntu])
+> We suggest running these commands to install ImageMagick (example: Distro [Debian/Ubuntu])
 >
 >>	1.	### apt-get install php5-dev imagemagick libmagickwand-dev
 >>	2.	### pecl install imagick
@@ -22,9 +23,19 @@
 >
 > [convert] is a unix/linux command pre-installed in some distro.
 >
-# To choose one the cases above you must be modify config.php
+# To choose using one the cases above to convert PDF to image you must modify config.php
 >
-> First setting the path of pdf and image folder following the instructions in file
+> First set the path of pdf and image folder following the instructions in the file
 >
-> And setting the USELIB to do the convertions
+> And set USELIB to do the convertions
 >
+# Requirements
+>
+> Do use the PHP code in this project you will need PHP 5.3 or higher installed on your server
+> If you choose to use gviewer you will need Administrator Permissions to install it on your server
+> To install ImageMagick there are no permissions required
+>
+# Other Information
+>
+> In the index.php file is included a upload form that after uploading the pdf doc it will redirect you 
+> to the output page but before testing it you will need to edit the base url on the upload_file.php on line 23
